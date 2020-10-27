@@ -13,3 +13,6 @@ Let's start by importing the data into our Jupyter Notebook. Since the csv file 
                        skip_footer=2
                       )
 
+Our data looks like this:
+
+![01_table](images/01_table.png)

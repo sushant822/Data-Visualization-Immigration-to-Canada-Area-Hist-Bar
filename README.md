@@ -18,7 +18,7 @@ Our data looks like this:
 
 ![01_table](images/01_table.png)
 
-Let's cleanup or data by dropping unwanted rows and renaming some of the column headers.
+Let's cleanup our data by dropping unwanted rows and renaming some of the column headers.
 
     df_can.drop(['AREA', 'REG', 'DEV', 'Type', 'Coverage'], axis=1, inplace=True)
     df_can.rename(columns={'OdName':'Country', 'AreaName':'Continent','RegName':'Region'}, inplace=True)

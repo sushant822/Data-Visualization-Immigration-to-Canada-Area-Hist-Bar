@@ -33,3 +33,5 @@ And also let us set the countries as index. This will be useful for quickly look
 Right now, we have the data/number of immigrants per year. So let us make a *Total* column which adds them all.
 
     df_can['Total'] = df_can.sum(axis=1)
+
+Now, our data prep is almost complete and we can start plotting and visualizing the data.

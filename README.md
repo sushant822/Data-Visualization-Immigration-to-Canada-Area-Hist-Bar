@@ -23,3 +23,11 @@ Let's cleanup our data by dropping unwanted rows and renaming some of the column
     df_can.drop(['AREA', 'REG', 'DEV', 'Type', 'Coverage'], axis=1, inplace=True)
     df_can.rename(columns={'OdName':'Country', 'AreaName':'Continent','RegName':'Region'}, inplace=True)
 
+Since our column labels have numbers in them, there might be a chance that they are not strings. This could cause issues in our analysis. Let us first make sure that they are all strings and if not, then convert them to strings.
+	
+	df_can.columns = list(map(str, df_can.columns))
+	all(isinstance(column, str) for column in df_can.columns)
+
+And also let us set the countries as index. This will be useful for quickly looking up countries using .loc method.
+
+Right now, we have the data/number of immigrants per year. So let us make a *Total* column which adds them all.

@@ -34,4 +34,4 @@ Right now, we have the data/number of immigrants per year. So let us make a *Tot
 
     df_can['Total'] = df_can.sum(axis=1)
 
-Now, our data prep is almost complete and we can start plotting and visualizing the data. 
+Now, our data prep is almost complete and we can start plotting and visualizing the data.

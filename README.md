@@ -1,5 +1,5 @@
 # Data-Visualization-Immigration-to-Canada-Area-Hist-Bar
-### by Sushant Deshpande
+### by Sushant Deshpande 
 
 In this project, I set out to answer 3 questions:
 * Which are the top 15 countries countributing to the immigration to Canada?
